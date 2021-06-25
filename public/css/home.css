@@ -1,0 +1,149 @@
+/* header */
+header{
+    background-color: #EAC926;
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 1px;
+}
+.logo{
+    width: 40%;
+    padding: 20px 20px;
+}
+form{
+    font-size: 10px;
+    padding: 10px 20px;
+}
+.comprar{
+    text-align: center;
+}
+ul{
+    padding: 10px;
+    /* display: none;  oculta las listas en Mobile */
+}
+li{
+    list-style: none;
+}
+.burger-menu{
+    color: var(--color-grisclaro);
+    background-color: var(--color-celeste);
+    font-size: 18px;
+    width: 35px;
+    height: 34px;
+    margin:10px auto 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    display: flex;
+}
+
+/* main */
+main{
+    background-color: var(--color-grisclaro);
+    /* width: 90vw; */
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+.banner{
+    width: 100%;
+}
+main section article{
+    width: 90vw;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    border-top: solid 1px var(--color-grisclaro);
+}
+article{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 24px;
+}
+article img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+}
+article .fa-truck{
+    color: var(--color-verde);
+    border: 1px solid var(--color-verde); 
+    width: min-content;
+    font-size: 1rem; 
+    border-radius: 50%; 
+    text-align: center;
+    padding: .5em;
+}
+article .precios{
+    font-size: 18px;
+}
+article .descuentos{
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+/* footer */
+footer{
+background-color: white;
+color: var(--color-grisoscuro);
+text-align: center;
+}
+footer i{
+    color: var(--color-celeste);
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+footer p{
+    padding: 0 90px;
+    font-size: 12px;
+}
+.copyright{
+    padding: 0 0 15px 15px;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+}
+
+@media (max-width: 360px){
+    ul{
+        display: none;
+    }
+
+    .banner{
+        height: 100px;
+    }
+    .descripcion{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    .burger-menu{
+        display: none;
+    }
+
+    main article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .descripcion{
+        display: initial;
+    }
+}
+
+@media (min-width: 769px){
+    header{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+}
